@@ -21,7 +21,7 @@ The following `ASLayoutSpec` subclasses can be used to compose simple or very co
 You may also subclass <a href="layout2-layoutspec-types.html#aslayoutspec"><code>ASLayoutSpec</code></a> in order to make your own, custom layout specs. 
 
 ## ASInsetLayoutSpec
-During the layout pass, the `ASInsetLayoutSpec` passes its `constrainedSize.max` CGSize to its child, after subtracting its insets. Once the child determines it's final size, the inset spec passes its final size up as the size of its child plus its inset margin. Since the inset layout spec is sized based on the size of it's child, the child **must** have an instrinsic size or explicitly set its size. 
+During the layout pass, the `ASInsetLayoutSpec` passes its `constrainedSize.max` CGSize to its child, after subtracting its insets. Once the child determines it's final size, the inset spec passes its final size up as the size of its child plus its inset margin. Since the inset layout spec is sized based on the size of it's child, the child **must** have an intrinsic size or explicitly set its size. 
 
 <img src="/static/images/layoutSpec-types/ASInsetLayoutSpec-diagram.png" width="75%">
 
